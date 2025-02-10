@@ -2378,7 +2378,6 @@ class CustomObjectDataset(Dataset):
 # 替換為 LatentDiffusion 的 LoRA 注入
 # ============================
 from lora_diffusion import inject_trainable_lora
-from libcom.objectstitch import Mure_ObjectStitchModel
 
 class LoRA_ObjectStitch(Mure_ObjectStitchModel):
     def __init__(self, device='cuda:0', lora_rank=4, **kwargs):
